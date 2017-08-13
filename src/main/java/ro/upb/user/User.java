@@ -1,0 +1,81 @@
+package ro.upb.user;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import ro.upb.post.Post;
+
+import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * Created by radug on 8/4/2017.
+ */
+
+@Entity
+public class User {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    private String userName;
+
+    @JsonIgnore
+    private String password;
+
+    private String email;
+
+    @OneToMany
+    private List<Post> posts;
+
+
+    public User() {
+        posts = new ArrayList<>();
+    }
+
+    public User(String userName, String password, String email) {
+        this();
+        this.userName = userName;
+        this.password = password;
+        this.email = email;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public List<Post> getPosts() {
+        return posts;
+    }
+
+    public void addPost(Post post) {
+        this.posts.add(post);
+    }
+}
