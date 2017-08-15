@@ -1,6 +1,6 @@
-package ro.upb.post;
+package ro.upb.site.post;
 
-import ro.upb.user.User;
+import ro.upb.general.user.User;
 
 import javax.persistence.*;
 

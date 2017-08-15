@@ -1,4 +1,4 @@
-package ro.upb.user;
+package ro.upb.general.user;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

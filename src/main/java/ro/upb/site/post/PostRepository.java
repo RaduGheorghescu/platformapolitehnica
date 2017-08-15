@@ -1,8 +1,8 @@
-package ro.upb.post;
+package ro.upb.site.post;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import ro.upb.user.User;
+import ro.upb.general.user.User;
 
 import java.util.List;
 

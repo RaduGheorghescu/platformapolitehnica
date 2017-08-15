@@ -1,4 +1,4 @@
-package ro.upb.user;
+package ro.upb.general.user;
 
 import java.util.List;
 

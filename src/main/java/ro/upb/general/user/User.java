@@ -1,7 +1,7 @@
-package ro.upb.user;
+package ro.upb.general.user;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import ro.upb.post.Post;
+import ro.upb.site.post.Post;
 
 import javax.persistence.*;
 import java.util.ArrayList;

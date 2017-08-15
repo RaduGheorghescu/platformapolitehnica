@@ -1,8 +1,7 @@
-package ro.upb.post;
+package ro.upb.site.post;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import ro.upb.user.User;
 
 import java.util.List;
 

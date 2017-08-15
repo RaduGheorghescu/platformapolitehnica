@@ -1,4 +1,4 @@
-package ro.upb.role;
+package ro.upb.general.role;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

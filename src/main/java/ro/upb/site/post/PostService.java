@@ -1,6 +1,4 @@
-package ro.upb.post;
-
-import ro.upb.user.User;
+package ro.upb.site.post;
 
 import java.util.List;
 

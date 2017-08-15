@@ -1,4 +1,4 @@
-package ro.upb.user;
+package ro.upb.general.user;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
